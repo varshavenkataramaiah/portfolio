@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Varsha Venkataramaiah — Embedded Systems & IoT Engineer</title>
+  <meta name="description" content="Portfolio of Varsha Venkataramaiah — embedded systems and IoT engineer, researcher, and educator based in Bengaluru." />
+
+  <!-- Fonts: a technical display face, a readable body face, a mono utility face -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===================== NAV ===================== -->
+  <header class="nav" id="top">
+    <div class="nav__inner">
+      <a href="#top" class="nav__brand">VV<span class="nav__brand-dot">.</span></a>
+
+      <nav class="nav__links" id="navLinks" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#credentials">Credentials</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav__actions">
+        <!-- Theme toggle (JS) -->
+        <button class="icon-btn" id="themeToggle" aria-label="Toggle dark mode" title="Toggle theme">
+          <span class="icon-btn__label" id="themeLabel">dark</span>
+        </button>
+        <!-- Mobile menu toggle (JS) -->
+        <button class="icon-btn nav__burger" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="hero">
+      <div class="wrap hero__inner">
+        <div class="hero__text">
+          <p class="eyebrow">// embedded systems · iot · research</p>
+
+          <h1 class="hero__name">Varsha<br />Venkataramaiah</h1>
+
+          <!-- Signature: an oscilloscope-style signal trace under the name -->
+          <svg class="hero__trace" viewBox="0 0 600 40" preserveAspectRatio="none" aria-hidden="true">
+            <polyline points="0,20 90,20 110,6 150,34 190,10 230,28 250,20 600,20" />
+          </svg>
+
+          <p class="hero__role">Embedded Systems &amp; IoT Engineer · Researcher · Educator</p>
+
+          <p class="hero__thesis" style="text-align: justify;"> 
+           I build full-stack web applications with the MERN stack (MongoDB, Express, React, Node.js) 
+           translating ideas into functional software, from data-driven APIs to responsive user interfaces.
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn btn--solid" href="#projects">View my work</a>
+            <a class="btn btn--ghost" href="#contact">Get in touch</a>
+          </div>
+        </div>
+
+        <!-- Profile photo (optional).
+             Drop your image at images/profile.jpg. Until then a styled "VV"
+             placeholder shows automatically. To remove the photo entirely,
+             delete this whole <figure> block (the hero re-centres on its own). -->
+        <figure class="hero__photo">
+          <div class="hero__frame">
+            <img src="images/profile.jpeg" alt="Varsha Venkataramaiah"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="hero__placeholder" aria-hidden="true">VV</div>
+          </div>
+          <figcaption>// bengaluru, india</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section class="section" id="about">
+      <div class="wrap">
+        <p class="eyebrow">// about</p>
+        <h2 class="section__title">Developer, researcher, teacher.</h2>
+
+        <div class="about" style="text-align: justify;">
+          <p >
+            I'm a full-stack developer working with the MERN stack (MongoDB, Express, React, Node.js), based in Bengaluru. 
+            I build web applications end to end from data models and REST APIs to responsive, 
+            component-driven interfaces with a bias toward shipping things that actually run.
+          </p>
+          <p>
+            I hold an MSc in Embedded Systems & IoT from Newcastle University (Merit) and 
+            a BTech in Electronics & Computer Engineering from REVA University (9.05 CGPA). 
+            My background sits where hardware meets software, which shapes how I write code: an eye for performance, real constraints, 
+            and systems that hold up in production. Alongside eight filed Indian patents and an IEEE ICAECC 2023 publication, 
+            I've increasingly focused on building software tools and web experiences because a good idea deserves a good interface.
+          </p>
+          <p>
+            I served as an Assistant Professor of Computer Science & Engineering at Cambridge Institute of Technology North Campus, 
+            a tenure during which kept me close to fundamentals and constantly explaining the "why" behind the build.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SKILLS ===================== -->
+    <section class="section section--alt" id="skills">
+      <div class="wrap">
+        <p class="eyebrow">// skills</p>
+        <h2 class="section__title">What I work with</h2>
+
+        <div class="cards">
+          <article class="card">
+            <h3 class="card__title">Embedded &amp; Hardware</h3>
+            <ul class="tags">
+              <li>Embedded C / C++</li>
+              <li>Raspberry Pi</li>
+              <li>PID &amp; closed-loop control</li>
+              <li>Sensor integration</li>
+              <li>IoT / M2M networking</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3 class="card__title">Programming Languages</h3>
+            <ul class="tags">
+              <li>Python</li>
+              <li>C/C++</li>
+              <li>Assembly Language</li>
+              <li>VHDL/Verilog</li>
+              <li>Unix Shell Scripting</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3 class="card__title">Web &amp; Tooling</h3>
+            <ul class="tags">
+                
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+              <li>MongoDB</li>
+              <li>Express</li>
+              <li>React</li>
+              <li>Node.js</li>
+              <li>Git &amp; GitHub</li>
+              <li>VS Code</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROJECTS ===================== -->
+    <section class="section" id="projects">
+      <div class="wrap">
+        <p class="eyebrow">// projects</p>
+        <h2 class="section__title">Selected work</h2>
+
+        <div class="cards">
+
+          <article class="card card--project">
+            <h3 class="card__title">Automated Exercising System for Paralysed Patients</h3>
+            <p class="card__desc">
+              A rehabilitation device that automates therapeutic exercises through embedded
+              control and sensor integration. Led development end to end; secured a Cisco
+              thingQbator seed grant (top 1% of 830+ teams).
+            </p>
+            <p class="card__tech"><span>Embedded C</span><span>Sensors &amp; actuators</span><span>Control systems</span></p>
+            <!-- Replace # with your GitHub repo link when available -->
+            <!-- <a class="card__link" href="#" rel="noopener">Details &rarr;</a> -->
+          </article>
+
+          <article class="card card--project">
+            <h3 class="card__title">Camouflage Surveillance System</h3>
+            <p class="card__desc">
+              An intelligent surveillance system with embedded sensing. Won a KSCST research
+              grant and 1st Prize at the Avishkar Innovation Competition, and was published at
+              IEEE ICAECC 2023.
+            </p>
+            <p class="card__tech"><span>Embedded systems</span><span>Sensor fusion</span><span>IEEE published</span></p>
+            <!-- <a class="card__link" href="#" rel="noopener">Details &rarr;</a> -->
+          </article>
+
+          <article class="card card--project">
+            <h3 class="card__title">AR Hand Tracking &amp; Grip Recognition</h3>
+            <p class="card__desc">
+              MSc thesis: a real-time system that detects 21 hand landmarks from webcam video,
+              computes joint angles, and classifies seven grip types against angle thresholds
+              validated against benchmarks from prior published studies.
+            </p>
+            <p class="card__tech"><span>Python</span><span>OpenCV</span><span>MediaPipe</span></p>
+            <!-- <a class="card__link" href="#" rel="noopener">Details &rarr;</a> -->
+          </article>
+
+          <article class="card card--project">
+            <h3 class="card__title">Prior Art Search Tool</h3>
+            <p class="card__desc">
+              A patent research tool that pairs Google Patents linking with a Claude API proxy
+              server to speed up prior-art discovery built from my own patent-filing workflow.
+            </p>
+            <p class="card__tech"><span>JavaScript</span><span>REST APIs</span><span>Node proxy</span></p>
+            <!--  <a class="card__link" href="#" rel="noopener">Details &rarr;</a> -->
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CREDENTIALS (Certifications / Achievements) ===================== -->
+    <section class="section section--alt" id="credentials">
+      <div class="wrap">
+        <p class="eyebrow">// credentials</p>
+        <h2 class="section__title">Recognition &amp; achievements</h2>
+
+        <ul class="timeline">
+          <li>
+            <span class="timeline__mark">Patents</span>
+            <p>Eight published Indian patents</p>
+          </li>
+          <li>
+            <span class="timeline__mark">Publication</span>
+            <p>IEEE ICAECC 2023 conference paper</p>
+          </li>
+          <li>
+            <span class="timeline__mark">Grant</span>
+            <p>Cisco thingQbator CSR seed grant - top 1% of 830+ teams</p>
+          </li>
+          <li>
+            <span class="timeline__mark">Award</span>
+            <p>KSCST research grant &amp; 1st Prize, Avishkar Innovation Competition</p>
+          </li>
+          <li>
+            <span class="timeline__mark">Degree</span>
+            <p>MSc Embedded Systems &amp; IoT (Merit) - Newcastle University</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section class="section" id="contact">
+      <div class="wrap contact">
+        <div class="contact__intro">
+          <p class="eyebrow">// contact</p>
+          <h2 class="section__title">Let's build something.</h2>
+          <p class="contact__lead">
+            Open to embedded software, IP, and EdTech work. Drop a note and I'll reply.
+          </p>
+
+          <ul class="contact__links">
+            <!-- TODO: replace the placeholder values below with your real details -->
+            <li><span>Email</span><a href="mailto:varshajaishree7@gmail.com">varshajaishree7@gmail.com</a></li>
+            <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/varsha-venkataramaiah" target="_blank" rel="noopener">Varsha-Venkataramaiah</a></li>
+            <li><span>GitHub</span><a href="https://github.com/varshavenkataramaiah" target="_blank" rel="noopener">/VarshaVenkataramaiah</a></li>
+            <li><span>Location</span><span>Bengaluru, India</span></li>
+          </ul>
+        </div>
+
+        <!-- Contact form with JS validation. No <form> submit-to-server;
+             on success it opens the visitor's mail client via mailto. -->
+        <div class="form" novalidate>
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" autocomplete="name" />
+            <small class="field__error" data-error-for="name"></small>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" />
+            <small class="field__error" data-error-for="email"></small>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+            <small class="field__error" data-error-for="message"></small>
+          </div>
+          <button class="btn btn--solid" id="formSubmit" type="button">Send message</button>
+          <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <p>&copy; 2026 Varsha Venkataramaiah</p>
+      <p>Built with HTML, CSS &amp; JavaScript</p>
+      <a href="#top" class="footer__top">Back to top &uarr;</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
